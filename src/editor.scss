@@ -1,0 +1,19 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-create-block-formo-newsticker {
+	border: 1px dotted #f00;
+}
+.editor-styles-wrapper h3.formo-newsticker_content {
+  font-family: Krana, sans-serif;
+  text-transform: uppercase;
+  font-size: clamp(20px, 3.9vw, 100px);
+  line-height: 2;
+  padding: 0 0.5em;
+  margin: 0;
+  white-space: nowrap;
+  min-height: 1em;
+}

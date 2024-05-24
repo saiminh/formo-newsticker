@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "create-block/formo-newsticker",
+	"version": "0.1.0",
+	"title": "Formo Newsticker",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Example block scaffolded with Create Block tool.",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+  "attributes": {
+    "newstickerText": {
+      "type": "string",
+      "source": "html",
+      "selector": "h3"
+    },
+    "speed": {
+      "type": "string",
+      "default": "5"
+    }
+  },
+	"textdomain": "formo-newsticker",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js"
+}
