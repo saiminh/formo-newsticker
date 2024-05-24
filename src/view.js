@@ -1,8 +1,10 @@
 const newstickers = document.querySelectorAll('.formo-newsticker');
 
-newstickers.forEach((newsticker) => {
-  init(newsticker);
-})
+document.addEventListener('DOMContentLoaded', () => {
+  newstickers.forEach((newsticker) => {
+    init(newsticker);
+  })
+});
 
 let resizeTimer;
 
@@ -20,7 +22,6 @@ function init(newsticker) {
   const duration = seconds * 1000;
   let contents = newsticker.querySelectorAll('.formo-newsticker_content');
   const contentWidth = contents[0].offsetWidth;
-
 
   if ( contents.length < 2 && windowFraction(contentWidth) > 0.45) { 
     const factor = Math.floor(windowFraction(contentWidth));
