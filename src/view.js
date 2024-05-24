@@ -1,12 +1,17 @@
 const newstickers = document.querySelectorAll('.formo-newsticker');
 
+let resizeTimer;
+
 document.addEventListener('DOMContentLoaded', () => {
   newstickers.forEach((newsticker) => {
-    init(newsticker);
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function() {
+      newstickers.forEach((newsticker) => {
+        init(newsticker);
+      })
+    }, 250)
   })
 });
-
-let resizeTimer;
 
 window.addEventListener('resize', () => {
   clearTimeout(resizeTimer);
