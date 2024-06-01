@@ -1,6 +1,6 @@
 .formo-newsticker {
 	background-color: var(--wp--preset--color--formo-yellow, #f3f3f3);
-  color: var(--wp--preset--color--black, #000);
+  color: var(--wp--preset--color--formo-darktone, #0A0A37);
   padding: 0;
   width: 100%;
   overflow: hidden; 
@@ -17,6 +17,11 @@
   margin: 0;
   white-space: nowrap;
   min-height: 1em;
+  letter-spacing: 0;
+
+  & a {
+    color: var(--wp--preset--color--formo-darktone, #0A0A37);
+  }
 }
 @media screen and (max-width: 782px) {
   .formo-newsticker_content {
