@@ -13,14 +13,24 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 });
 
+let prevWidth = window.innerWidth;
+
 window.addEventListener('resize', () => {
+  const widthChanged = window.innerWidth !== prevWidth;
+
+  if (!widthChanged) {
+    return;
+  }
+  
   clearTimeout(resizeTimer);
   resizeTimer = setTimeout(function() {
-    newstickers.forEach((newsticker) => {
-      init(newsticker);
-    })
+    newsTickers.forEach(newsTicker => {
+      init(newsTicker);
+    });
   }, 250)
+  prevWidth = window.innerWidth;
 });
+
 
 function init(newsticker) {
   const seconds = newsticker.getAttribute('data-scrollspeed');
