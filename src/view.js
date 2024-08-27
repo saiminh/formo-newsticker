@@ -24,7 +24,7 @@ window.addEventListener('resize', () => {
   
   clearTimeout(resizeTimer);
   resizeTimer = setTimeout(function() {
-    newsTickers.forEach(newsTicker => {
+    newstickers.forEach(newsTicker => {
       init(newsTicker);
     });
   }, 250)
