@@ -1,19 +1,20 @@
 .formo-newsticker {
-	background-color: var(--wp--preset--color--formo-yellow, #f3f3f3);
-  color: var(--wp--preset--color--formo-darktone, #0A0A37);
-  padding: 0;
+  padding: 1em 0;
+  margin: -1em 0!important;
   width: 100%;
   overflow: hidden; 
   display: flex;
   justify-content: flex-start;
   gap: 0;
+  background-color: var(--wp--preset--color--formo-yellow, #f3f3f3);
 }
 .formo-newsticker_content {
+  color: var(--wp--preset--color--formo-darktone, #0A0A37);
   font-family: Krana, sans-serif;
   text-transform: uppercase;
   font-size: clamp(20px, 3.9vw, 100px);
-  line-height: 2;
-  padding: 0 0.5em;
+  line-height: 1;
+  padding: 0.5em 0.5em;
   margin: 0;
   white-space: nowrap;
   min-height: 1em;
