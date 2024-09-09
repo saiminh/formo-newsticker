@@ -6,7 +6,19 @@
   display: flex;
   justify-content: flex-start;
   gap: 0;
-  background-color: var(--wp--preset--color--formo-yellow, #f3f3f3);
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 1em;
+    bottom: 1em;
+    width: 100%;
+    background-color: var(--wp--preset--color--formo-yellow, #f3f3f3);
+    z-index: 0;
+  }
 }
 .formo-newsticker_content {
   color: var(--wp--preset--color--formo-darktone, #0A0A37);
@@ -19,6 +31,7 @@
   white-space: nowrap;
   min-height: 1em;
   letter-spacing: 0;
+  z-index: 1;
 
   & a {
     color: var(--wp--preset--color--formo-darktone, #0A0A37);
